@@ -28,14 +28,14 @@ config = inicfg.load(nil, directIni)
 -- Update system
 update_state = false
 
-local script_vers = 2
-local script_vers_text = "1.2"
+local script_vers = 2 -- не менять
+local script_vers_text = "1.2" -- не менять
 
-local update_url = "https://raw.githubusercontent.com/ClainTxt/scripts/main/update.ini" -- тут тоже свою ссылку
-local update_path = getWorkingDirectory() .. "/update.ini" -- и тут свою ссылку
+local update_url = "https://raw.githubusercontent.com/ClainTxt/scripts/main/update.ini" -- не менять
+local update_path = getWorkingDirectory() .. "/update.ini" -- не менять
 
-local script_url = "https://raw.githubusercontent.com/ClainTxt/scripts/main/clain_imgui.lua" -- тут свою ссылку
-local script_path = thisScript().path
+local script_url = "https://raw.githubusercontent.com/ClainTxt/scripts/main/clain_imgui.lua" -- не менять
+local script_path = thisScript().path -- не менять
 
 --
 -- Имгуи переменные
@@ -111,7 +111,7 @@ function main() -- Главная функция сампа
 			break 
 		end
 		--
-		if testCheat('REL') then -- Если нажать кнопки по очереди как HESOYAM перезагрузим скрипт
+		if testCheat('REL') then -- Если нажать кнопки по очереди как HESOYAM перезагрузит скрипт
 			scriptReload()
 		end
 		if testCheat('ADM') then
