@@ -28,13 +28,13 @@ config = inicfg.load(nil, directIni)
 -- Update system
 update_state = false
 
-local script_vers = 1
-local script_vers_text = "1.05"
+local script_vers = 2
+local script_vers_text = "1.2"
 
 local update_url = "https://raw.githubusercontent.com/ClainTxt/scripts/main/update.ini" -- тут тоже свою ссылку
 local update_path = getWorkingDirectory() .. "/update.ini" -- и тут свою ссылку
 
-local script_url = "" -- тут свою ссылку
+local script_url = "https://raw.githubusercontent.com/ClainTxt/scripts/main/clain_imgui.lua" -- тут свою ссылку
 local script_path = thisScript().path
 
 --
